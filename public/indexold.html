@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>East Greenwhich beach cleanup!</title>
+	<link rel="stylesheet" type="text/css" href="css/hpstyles.css">
+
+</head>
+<body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="vwKVZzZp"></script>
+<a href="index">
+	<img id="logo" src="images/logo.png" alt="Eg beach cleanup Logo">
+	</a>
+	<main>
+		<nav>
+			<ul>
+				<li><a href="index">Home</a></li>
+				<li><a href="about">About Us</a></li>
+				<li><a href="events">Events</a></li>
+				<li><a href="get-involved">Get Involved</a></li>
+			</ul>
+		</nav>
+		<h1>Welcome to East Greenwhich Beach cleanup</h1>
+		<h2>Our mission!</h2>
+		<img src="images/hpcleanup.png" alt="Image of group members cleaning up the beach">
+		<p class="mission-text">We are the proud members of the East Greenwich beach cleanup.This site will serve as the main infromation center for our group.
+			We are a devoted group of students with a mission of keeping our town beaches in RI clean. You can find infomration about how to help and get Involved here!
+		</p>
+		<button id="values-button">Our Values</button>
+        <div id="values-content"></div>
+		<div class="fb-comments" data-href="https://www.tylermakhoul.rhody.dev/egBeachCleanup_v6/index.html" data-width="400" data-numposts="7"></div>
+	</main>
+	<footer>
+		<p class ="contact-text">&copy; 2023 East Greenwhich Beach Cleanup</p>
+		<p class ="contact-text" > Created by Tyler Makhoul
+			<a href="mailto:Tyler_makhoul@uri.edu">Contact me at tyler_makhoul@uri.edu</a>
+		</p>
+	</footer>
+
+  <script>
+    var valuesButton = document.getElementById("values-button");
+    var valuesContent = document.getElementById("values-content");
+    valuesButton.onclick = function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'values.html', true);
+        xhr.onload = function() {
+            valuesContent.innerHTML = this.responseText;
+        };
+        xhr.send();
+    };
+</script>
+ 
+</body>
+
+</html>

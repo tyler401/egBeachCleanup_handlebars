@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Beach Cleanup!",
+    "date": "2023-03-22",
+    "time": "09:00:00",
+    "description": "Join us for a fun day cleaning up the beach! We will provide bags, but feel free to bring your own. Meet us at the East Greenwhich state beach lot at 9am."
+  },
+  {
+    "title": "Cleanup Challenge",
+    "date": "2023-04-23",
+    "time": "10:00:00",
+    "description": "In honor of Earth Day, we are challenging our community to pick up as much litter as we can. The winner with the most trash in lbs will recieve a 25$ Dunkin gift card!"
+  },
+  {
+    "title": "Save the turtles",
+    "date": "2023-06-10",
+    "time": "10:00:00",
+    "description": "Join us to help save marine life by cleaning trash and building protected areas on the beach for wildlife to reproduce safely!"
+  },
+  {
+    "title": "No more cans",
+    "date": "2023-07-05",
+    "time": "10:00:00",
+    "description": "Join us to help clean the beach from the 4th of july removing as much trash as possible from people celabrating!"
+  }
+]

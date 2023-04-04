@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>East Greenwhich beach cleanup!</title>
+<link rel="stylesheet" type="text/css" href="css/events.css">
+
+<link rel="stylesheet" type="text/css" href="css/hpStyles.css">
+
+</head>
+
+<body>
+  <a href="index">
+    <img id="logo" src="images/logo.png" alt="Eg beach cleanup Logo">
+    </a>
+    <main>
+        <nav>
+            <ul>
+          		<li><a href="index">Home</a></li>
+				<li><a href="about">About Us</a></li>
+				<li><a href="events">Events</a></li>
+				<li><a href="get-involved">Get Involved</a></li>
+         
+            </ul>
+        </nav>
+        <section id="showcase">
+          <h1>Previous Events</h1>
+          <p>Click each image to learn about it!</p>
+          <div class="image-container">
+            <img src="images/hpCleanUp.png" alt="Event 1">
+            <img src="images/second.jpg" alt="Event 2">
+            <img src="images/third.jpg" alt="Event 3">
+          </div>
+          <div id = "description"></div>
+          
+        </section>
+
+        <h1>Upcoming Events</h1>
+        <ul id="events-list" class="events-list"></ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      if (typeof jQuery == 'undefined') {
+        document.write('<script src="js/jquery-3.6.0.min.js"><\/script>');
+      }
+    </script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>
