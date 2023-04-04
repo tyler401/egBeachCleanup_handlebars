@@ -5,17 +5,14 @@ const app = express();
 const port = 1337;
 const publicPath = __dirname + '/public';
 
-// Set up the Handlebars view engine
 app.engine('handlebars', engine({ extname: '.handlebars', defaultLayout: "main"}));
 app.set('view engine', 'handlebars');
 
-// Serve static files
 app.use(express.static(publicPath));
 app.use('/css', express.static(publicPath + '/css', { 'Content-Type': 'text/css' }));
 app.use('/images', express.static(publicPath + '/images'));
 app.use('/js', express.static(publicPath + '/js'));
 
-// Render each template and send the appropriate data from the server side based on the path that a user has navigated to
 app.get('/', function(req, res) {
   res.render('index');
 });
